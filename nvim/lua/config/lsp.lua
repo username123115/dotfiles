@@ -44,32 +44,37 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 -- https://nathan-long.com/blog/modern-javascript-tooling-in-neovim
 -- Setup language servers.
-local lspconfig = require('lspconfig')
-
-lspconfig.cssls.setup {}
 -- C/C++/Objective C
-lspconfig.ccls.setup {
+vim.lsp.config('ccls', {
 	capabilities = capabilities
-}
-lspconfig.gdscript.setup {}
-lspconfig.pyright.setup {}
-lspconfig.ts_ls.setup {}
-lspconfig.html.setup {
-	capabilities = capabilities
-}
-
--- lspconfig.jdtls.setup {}
-
-lspconfig.emmet_ls.setup {
-	capabilities = capabilities
-}
-
-lspconfig.rust_analyzer.setup({
-	settings = {
-		capabilities = capabilities
-	}
 })
-lspconfig.asm_lsp.setup {}
-lspconfig.lua_ls.setup {}
+vim.lsp.config('html', {
+	capabilities = capabilities
+})
 
-vim.lsp.enable('tailwindcss')
+vim.lsp.config('emmet_ls', {
+	capabilities = capabilities
+})
+
+vim.lsp.config('rust_analyzer', {
+	capabilities = capabilities
+})
+
+vim.lsp.config('hls', {
+	capabilities = capabilities
+})
+
+vim.lsp.enable({
+	'cssls',
+	'ccls',
+	'gdscript',
+	'pyright',
+	'ts_ls',
+	'html',
+	'hls',
+	'emmet_ls',
+	'rust_analyzer',
+	'asm_lsp',
+	'lua_ls',
+	'tailwindcss',
+})
