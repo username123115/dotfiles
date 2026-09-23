@@ -64,6 +64,10 @@ vim.lsp.config('hls', {
 	capabilities = capabilities
 })
 
+vim.lsp.config('solidity_ls', {
+	capabilities = capabilities
+})
+
 vim.lsp.enable({
 	'cssls',
 	'ccls',
@@ -74,6 +78,7 @@ vim.lsp.enable({
 	'hls',
 	'emmet_ls',
 	'rust_analyzer',
+	'solidity_ls',
 	'asm_lsp',
 	'lua_ls',
 	'tailwindcss',
