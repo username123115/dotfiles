@@ -35,6 +35,8 @@ if not nix.is_nix_managed() then
     Plug 'williamboman/mason-lspconfig.nvim'
     Plug 'windwp/nvim-ts-autotag'
 
+	Plug 'sindrets/diffview.nvim'
+
     Plug 'stevearc/conform.nvim'
     Plug 'hrsh7th/cmp-nvim-lsp'
     Plug 'hrsh7th/cmp-buffer'

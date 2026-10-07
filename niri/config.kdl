@@ -396,6 +396,7 @@ binds {
     //Mod+T hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
 
     Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
+	Mod+P hotkey-overlay-title="Scratch keepassxc" { spawn "sh" "-lc" "~/.config/niri/scripts/scratch.sh org.keepassxc.KeePassXC"; }
 	Mod+T hotkey-overlay-title="Scratch Firefox" { spawn "sh" "-lc" "~/.config/niri/scripts/scratch.sh firefox"; }
 	Mod+A hotkey-overlay-title="Scratch Writer" { spawn "sh" "-lc" "~/.config/niri/scripts/scratch.sh libreoffice-writer"; }
 	Mod+S hotkey-overlay-title="Scratch Sioyek" { spawn "sh" "-lc" "~/.config/niri/scripts/scratch.sh sioyek"; }

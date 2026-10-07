@@ -81,5 +81,4 @@ vim.lsp.enable({
 	'solidity_ls',
 	'asm_lsp',
 	'lua_ls',
-	'tailwindcss',
 })
